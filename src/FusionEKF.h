@@ -44,6 +44,10 @@ class FusionEKF {
   Eigen::MatrixXd R_radar_;
   Eigen::MatrixXd H_laser_;
   Eigen::MatrixXd Hj_;
+  
+  // noises
+  double noise_ax_;
+  double noise_ay_;
 };
 
 #endif // FusionEKF_H_
